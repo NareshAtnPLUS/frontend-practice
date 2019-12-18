@@ -1,0 +1,29 @@
+@media(min-width:760px){
+    .container-2 {
+        display: flex;
+        justify-content: space-between;/*space-between*/
+    }    
+    .container-1{
+        display: flex;
+        
+    }
+}
+.container-1 div, .container-2 div{
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+.box-1{
+    flex: 1;
+    order: 2
+}
+.box-2{
+    flex: 1;
+    order: 3;
+}
+.box-3{
+    flex: 1;
+    order: 1
+}
+.container-2 div{
+    flex-basis: 25%;
+}

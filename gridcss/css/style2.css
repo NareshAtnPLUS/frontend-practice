@@ -1,0 +1,29 @@
+.wrapper{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+}
+.nested{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+}
+.nested > div{
+    background: #cccccc;
+    padding: 1em;
+}
+
+
+.nested > div:nth-child(odd){
+    background: #dddddd;
+}
+
+.wrapper > div{
+    background: #cccccc;
+    padding: 1em;
+}
+.wrapper > div:nth-child(odd){
+    background: #dddddd;
+}
